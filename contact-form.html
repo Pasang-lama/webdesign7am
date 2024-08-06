@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form:</title>
+    <style>
+      form {
+        width: 40%;
+        background-color: #f0f0f0;
+        margin: 0px auto;
+        padding: 40px;
+      }
+
+      form h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      form h1 span {
+        color: red;
+      }
+      form label {
+        display: block;
+        margin-bottom: 5px;
+        color: gray;
+      }
+      form input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      form textarea{
+        width: 100%;
+        padding: 10px;
+      }
+      form button{
+        background-color: red;
+        color: white;
+        padding: 15px 30px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h1>Fell Free to <span>Contact us.</span></h1>
+      <label for="name">Full Name: *</label>
+      <input type="text" id="name" name="name" placeholder="full name" />
+      <label for="number">Phone number: *</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        placeholder="Phone Number"
+      />
+      <label for="email">email Address: *</label>
+      <input type="email" id="email" name="email" placeholder="eamil address" />
+      <label for="subject">subject: *</label>
+      <input type="text" id="subject" name="subject" placeholder="subject" />
+      <label for="message">Message: *</label>
+      <textarea name="message" id="message" rows="7"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html>
